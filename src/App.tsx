@@ -39,7 +39,7 @@ const App = () => {
 // // Pass the Reducer(counter) to createStore() function
 // const store = createStore(counter);
 // // Redux is valid by Folding App component by Provider.
-// // Pass the store value created by createStore() function.
+// // pass the store value created by createstore() function.
 // ReactDOM.render(
 //   <Provider store={store}>
 //       <App />

@@ -25,12 +25,11 @@ const counter = (state = initialState, action: any) => {
 const store = createStore(counter);
 
 ReactDOM.render(
+// Redux is valid by Folding App component by Provider.
+// pass the store value created by createstore() function.
   <Provider store={store}>
       <App />
   </Provider>,
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
   document.getElementById('root')
 );
 
