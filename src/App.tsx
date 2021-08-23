@@ -1,8 +1,4 @@
-import React from "react";
-import  ReactDOM  from "react-dom";
-import { Provider } from "react-redux";
 import { useDispatch,  useSelector } from "react-redux";
-import { createStore } from "redux";
 import { RootState } from "./store";
 
 // Component for Counter Application
@@ -24,21 +20,21 @@ const App = () => {
   )
 }
 
-// Set initial state
-const initialState = { count: 0 };
-// Create Reducer function, counter for Action
-const counter = (state = initialState, action: any) => {
- switch(action.type) {
-    // In case "add_count" Action is published, update state and return it.
-    case "add_count":
-      const newCount = state.count + 1;
-      return {
-        count: newCount        
-     }; 
-     default:
-       return state;
-  }
-};
+// // Set initial state
+// const initialState = { count: 0 };
+// // Create Reducer function, counter for Action
+// const counter = (state = initialState, action: any) => {
+//  switch(action.type) {
+//     // In case "add_count" Action is published, update state and return it.
+//     case "add_count":
+//       const newCount = state.count + 1;
+//       return {
+//         count: newCount        
+//      }; 
+//      default:
+//        return state;
+//   }
+// };
 
 // // Pass the Reducer(counter) to createStore() function
 // const store = createStore(counter);
